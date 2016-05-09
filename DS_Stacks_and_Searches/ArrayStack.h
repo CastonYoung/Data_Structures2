@@ -1,6 +1,7 @@
 #include "Stdafx.h"
 
-template <class T> class StackRA: public Stack<T>
+template <class T>
+class StackRA: public Stack<T>
 {public:
 						StackRA()		{ i=0; }						// Start at the end.
 	virtual	int			Count()const	{ return TheRA.Count(); }		// Get # of items.

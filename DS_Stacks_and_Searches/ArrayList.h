@@ -53,7 +53,7 @@ public:
 
 	virtual T & Remove(int index)			// remove item at index
 	{	index = index - start_i;
-		if (index < 0) throw LNS;
+		if (index < 0) throw BLIST_LNS;
 		if (index+1 > count) throw OoB;
 		T* value = new T(the_array[index]);
 		while(++index < count)	the_array[index-1] = the_array[index];
